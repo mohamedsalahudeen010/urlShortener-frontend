@@ -103,6 +103,7 @@ const UrlShortenerPage=()=>{
         }
         else if(url.message==="Url entered is already exist"){
             setUrlExist(true)
+            setLong_url("")
         }
         console.log(url)
     } catch (error) {
