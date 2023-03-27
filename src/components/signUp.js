@@ -29,7 +29,7 @@ try {
         email,
         password
     }
-    const response=await fetch("http://localhost:2005/signup",{
+    const response=await fetch("https://url-shortener-back-end-gamma.vercel.app/signup",{
         method:"POST",
         body:JSON.stringify(user),
         headers:{
