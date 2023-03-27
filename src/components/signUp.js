@@ -100,7 +100,7 @@ return(
                     value={password2}
                      onChange={(e)=>{setPassword2(e.target.value)}}></input>
                 </div>
-                {show?<h3>Email already exist please Enter new email to signup </h3>:""}
+                {show?<h3 style={{color="red"}}>Email already exist, please Enter new email to signup </h3>:""}
                 <div className="remember">
                 <input type="checkbox" name="" id=" remember"></input>
                    <label htmlFor="remember" className="remember_label" >I accept the terms & conditions</label>
