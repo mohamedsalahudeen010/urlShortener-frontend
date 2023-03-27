@@ -96,7 +96,7 @@ const UrlShortenerPage=()=>{
         if(url.message==="content sent successfully"){
             setUrlEntered(true)
              setLong_url("")
-             setUrlEntered(false)
+           
             setData([...data,url.message.url])
             
            
@@ -127,7 +127,11 @@ const UrlShortenerPage=()=>{
                  type="text" 
                  id="long_url"
                  onChange={(e)=>{setLong_url(e.target.value)}}
-                 value={long_url}></input>
+                 value={long_url}
+                   onClick={()=>{
+                     setUrlEntered(false);
+                       setUrlExist(false)
+                   }}></input>
             </div>
             <div>
                    <button type="submit" 
