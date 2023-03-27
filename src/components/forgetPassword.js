@@ -21,7 +21,7 @@ const ForgetPage=()=>{
               }
               console.log(enteredEmail)
 
-              const response=await fetch("http://localhost:1500/api/forgetPassword",{
+              const response=await fetch("https://url-shortener-back-end-gamma.vercel.app/api/forgetPassword",{
                 method:"POST",
                 body:JSON.stringify(enteredEmail),
                 headers:{
