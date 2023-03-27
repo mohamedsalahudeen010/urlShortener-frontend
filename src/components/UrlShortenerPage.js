@@ -15,7 +15,7 @@ const UrlShortenerPage=()=>{
        const urlData=async()=>{
         try {
             
-            const response=await fetch("http://localhost:2005/url",{
+            const response=await fetch("https://url-shortener-back-end-gamma.vercel.app/url",{
                 method:"GET",
                 headers:{
                     "x-auth-token":localStorage.getItem("token")
@@ -34,7 +34,7 @@ const UrlShortenerPage=()=>{
     const handleDelete=async(id)=>{
         try {
             console.log("delete called")
-            const response=await fetch(`http://localhost:2005/url/${id}`,{
+            const response=await fetch(`https://url-shortener-back-end-gamma.vercel.app/url/${id}`,{
                 method:"DELETE",
                 headers:{
                     "x-auth-token":localStorage.getItem("token")  
@@ -71,7 +71,7 @@ const UrlShortenerPage=()=>{
         }
         
             
-            setShort_url(`http://localhost:2005/urlpage/${otpForUrl}`)
+            setShort_url(`https://url-shortener-back-end-gamma.vercel.app/urlpage/${otpForUrl}`)
             
     }
 
