@@ -1,0 +1,217 @@
+body{
+  background-color: rgb(22, 174, 60);
+}
+.App {
+ width: 100vw;
+  text-align: center;
+  background-color: rgb(21, 220, 71);
+  margin-left: auto;
+  min-height:100vh;
+}
+
+.container{
+ 
+  background-color: aliceblue;
+  width:80%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height:100vh;
+  
+}
+.remember_label{
+  margin-left: 0.5rem;
+}
+img{
+  width: 10rem;
+  height: 10rem;
+  margin-top: 1rem;
+}
+.social{
+  flex-direction: column;
+}
+
+.twitter1{
+  display: inline-block;
+}
+
+.twitter{
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.1rem;
+  height: 2.5rem;
+  width: 12rem;
+  border: 2px solid black;
+  border-radius: 0.4rem;
+  color: whitesmoke;
+  background-color: rgb(107, 107, 227);
+}
+.twitter>a{
+  text-decoration: none;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 0.5rem  0.1rem;
+  
+}
+
+.facebook>a{
+  text-decoration: none;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 0.5rem  0.1rem;
+}
+.google>a{
+  text-decoration: none;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 0.5rem  0.1rem;
+}
+.github>a{
+  text-decoration: none;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 0.5rem  0.1rem;
+}
+
+.facebook1{
+  display: inline-block;
+}
+.facebook{
+ 
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.1rem;
+  height: 2.5rem;
+  width: 12rem;
+  border: 2px solid black;
+  border-radius: 0.4rem;
+  background-color:rgb(64, 64, 183);
+  color: whitesmoke;
+}
+
+.google1{
+  display: inline-block;
+}
+.google{
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem 1rem;
+  height: 2.5rem;
+  width: 12rem;
+  border: 2px solid black;
+  border-radius: 0.4rem;
+  color: whitesmoke;
+  background-color: rgb(198, 63, 25);
+}
+.github1{
+  display: inline-block;
+}
+.github{
+  display: inline-block;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem 0.1rem;
+  height: 2.5rem;
+  width: 12rem;
+  border: 2px solid black;
+  border-radius: 0.4rem;
+  color: whitesmoke;
+  background-color: rgb(5, 5, 5);
+}
+
+hr{
+  color: black;
+  width: 100%;
+}
+
+.input{
+  display: block;
+  margin: 1rem auto;
+  padding: 0.7rem;
+  border-radius: 0.2rem;
+  width: 80%;
+}
+.label{
+  display: block;
+  text-align: left;
+  margin: 1rem 8rem;
+}
+                    
+.forget-password{
+  text-align: left;
+ 
+  color: red;
+  border: none;
+  display: inline-block;
+
+}
+.forget-password:hover{
+text-decoration: underline;
+
+}
+.login-btn{
+  float: right;
+  background-color: rgb(216, 106, 66);
+  padding: 0.2rem 1rem;
+  border-radius: 0.3rem;
+}
+.remember{
+  text-align: left;
+  margin: 1rem 8rem;
+}
+p{
+  text-align: left;
+  margin: 1rem 8rem;
+}
+p>span>a{
+  color: red;
+  text-decoration: none;
+}
+p>span>a:hover{
+  color: red;
+  text-decoration: underline;
+}
+.footer_Newuser>p{
+  text-align: center;
+}
+
+.footer_Newuser>p>button{
+  border: none;
+  background-color: aliceblue;
+}
+.footer_Newuser>p>button:hover{
+  color: red;
+}
+.Sign_up>p{
+  text-align: center;
+}
+
+.short-btn{
+  padding:0.5rem 2rem;
+  border-radius:0.5rem;
+  background-color:rgb(95, 170, 52);
+}
+
+.short-btn:hover{
+background-color: rgb(136, 94, 176);
+color: rgb(126, 20, 20);
+}
+
+.btn-logout{
+float:right;
+padding:0.2rem 2rem;
+margin:2rem 4rem;
+border-radius: 0.5rem;
+background-color: rgb(170, 52, 52);
+color: aliceblue;
+}
+
+.guvi-logo-title{
+  height: 5rem;
+  width: 5rem;
+  margin-top: -1rem;
+}
+.guvi-logo{
+  height: 8rem;
+  width: 14rem;
+  margin: -2rem 1rem 1rem;
+}
