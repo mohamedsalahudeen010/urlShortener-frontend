@@ -95,6 +95,8 @@ const UrlShortenerPage=()=>{
         const url=await response.json()
         if(url.message==="content sent successfully"){
             setUrlEntered(true)
+            setData([...data,url.message.url])
+            setLong_url("")
         }
         else if(url.message==="Url entered is already exist"){
             setUrlExist(true)
