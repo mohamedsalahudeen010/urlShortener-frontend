@@ -97,6 +97,7 @@ const UrlShortenerPage=()=>{
             setUrlEntered(true)
              setLong_url("")
             setData([...data,url.message.url])
+             setUrlEntered(false)
            
         }
         else if(url.message==="Url entered is already exist"){
