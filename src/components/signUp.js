@@ -81,8 +81,8 @@ return(
                     id="email"
                     value={email}
                     onChange={(e)=>{setEmail(e.target.value)}}
-                        onClick={()=>{
-                         setShow(false)}}></input>
+                    onClick={()=>{setShow(false)}}
+                        ></input>
                 </div>
                 <div>
                     <label htmlFor="password1" className="label">Password</label>
