@@ -82,7 +82,7 @@ const UrlShortenerPage=()=>{
             shortUrl:short_url
         }
     try {
-        const response=await fetch("http://localhost:2005/url",{
+        const response=await fetch("https://url-shortener-back-end-gamma.vercel.app/url",{
             method:"POST",
             body:JSON.stringify(data),
             headers:{
