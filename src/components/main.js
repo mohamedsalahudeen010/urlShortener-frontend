@@ -20,7 +20,7 @@ const MainPage=()=>{
       }
       try {
         
-        const response= await fetch("http://localhost:2005/login",{
+        const response= await fetch("https://url-shortener-back-end-gamma.vercel.app/login",{
           method:"POST",
           body:JSON.stringify(credentials),
           headers:{
