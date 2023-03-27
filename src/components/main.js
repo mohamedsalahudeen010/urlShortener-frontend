@@ -69,15 +69,16 @@ const MainPage=()=>{
                     onChange={(e)=>{setPassword(e.target.value)}}
                     value={password}></input>
                 </div>
-                <div>
-                    <button className="forget-password" onClick={()=>history.push("/forgetPassword")}>Forget Password</button>
-                </div>
+                
                 <div className="remember">
                 <input type="checkbox" name="" id=""></input>
                    <label for="remember" className="remember_label">Remember password</label>
                    <button type="submit" className="login-btn">Login</button>
                 </div>
             </form>
+<div>
+                    <button className="forget-password" onClick={()=>history.push("/forgetPassword")}>Forget Password</button>
+                </div>
        
   <p>This site is protected by reCAPTCHA and the Google 
     <span><a href='https://policies.google.com/privacy' target={"_blank"}  rel={"noreferrer"}>Privacy Policy 
