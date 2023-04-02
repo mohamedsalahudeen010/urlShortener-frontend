@@ -118,7 +118,7 @@ const UrlShortenerPage=()=>{
                 onClick={handleLogout}>Log Out</button>
           </div>
               <div>
-                <h1>Guvi Url Shortener <img className="guvi-logo-title" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_b2b52bf26a769b861fae19c5f65643cf/guvi.png" alt='Guvi-Logo'></img></h1>
+                <h1>Guvi Url Shortener</h1>
               
             </div>
         <form onSubmit={(e)=>handleSubmit(e)}>
