@@ -56,7 +56,7 @@ return(
     <div className="container">
   
     <div >
-      <img className="guvi-logo" src="https://d2lk14jtvqry1q.cloudfront.net/media/small_GUVI_1_c02a18fad7.png" alt='Guvi-Logo'/>
+      <img className="guvi-logo" src="https://play-lh.googleusercontent.com/OlbGuCl8s81YRMV5_t0Agx_C6t2b3EFt3Ra8aX1Yb6MTwcnGU-1ZzDChSTc5ca9k_h0" alt='Guvi-Logo'/>
     </div>
     <div>
                 <h1>Guvi Url Shortener</h1>
