@@ -7,6 +7,7 @@ import Card from 'react-bootstrap/Card';
 const UrlShortenerPage=()=>{
 
     const [long_url,setLong_url]=useState();
+    const [givenShort_url,setGivenShort_url]=useState();
     const [short_url,setShort_url]=useState();
     const [data,setData]=useState()
     const [urlEntered,setUrlEntered]=useState(false)
@@ -58,22 +59,22 @@ const UrlShortenerPage=()=>{
         history.push("/")
     }
 
-    // const shortenUrl=()=>{
-    //     let otpForUrl="";
+    const shortenUrl=(url)=>{
+        let otpForUrl="";
 
-    //     let variables="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+        let variables="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
 
-    //     let length=variables.length;
-    //     for(let i=0;i<5;i++){
+        let length=variables.length;
+        for(let i=0;i<5;i++){
             
-    //         otpForUrl+=variables.charAt(Math.floor(Math.random()*length))
+            otpForUrl+=variables.charAt(Math.floor(Math.random()*length))
 
-    //     }
+        }
         
             
-    //         setShort_url(`https://url-shortener-back-end-gamma.vercel.app/urlpage/${otpForUrl}`)
+            setShort_url(`https://${url}/${otpForUrl}`)
             
-    // }
+    }
 
     const handleSubmit=async(e)=>{
         e.preventDefault()
@@ -139,8 +140,8 @@ const UrlShortenerPage=()=>{
                 <input className="input"
                  type="text" 
                  id="long_url"
-                 onChange={(e)=>{setShort_url(e.target.value)}}
-                 value={short_url}
+                 onChange={(e)=>{setGivenShort_url(e.target.value)}}
+                 value={givenShort_url}
                    onClick={()=>{
                      setUrlEntered(false);
                        setUrlExist(false)
@@ -148,7 +149,8 @@ const UrlShortenerPage=()=>{
             </div>
             <div>
                    <button type="submit" 
-                   className="short-btn">Short your URL </button>
+                   className="short-btn"
+                       onClick={()=>shortenUrl(givenShort_url)}>Short your URL </button>
             </div >
         </form>
         {urlEntered?
