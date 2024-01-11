@@ -72,7 +72,7 @@ const UrlShortenerPage=()=>{
         }
         
             
-            setShort_url(`https://${url}/${otpForUrl}`)
+            setShort_url(`https://url-shortener-back-end-gamma.vercel.app/urlpage/${url}-${otpForUrl}`)
             
     }
 
