@@ -148,9 +148,7 @@ const UrlShortenerPage=()=>{
             </div>
             <div>
                    <button type="submit" 
-                   className="short-btn"
-                   
-                   onClick={shortenUrl}>Short your URL </button>
+                   className="short-btn">Short your URL </button>
             </div >
         </form>
         {urlEntered?
