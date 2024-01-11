@@ -58,22 +58,22 @@ const UrlShortenerPage=()=>{
         history.push("/")
     }
 
-    const shortenUrl=()=>{
-        let otpForUrl="";
+    // const shortenUrl=()=>{
+    //     let otpForUrl="";
 
-        let variables="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
+    //     let variables="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";
 
-        let length=variables.length;
-        for(let i=0;i<5;i++){
+    //     let length=variables.length;
+    //     for(let i=0;i<5;i++){
             
-            otpForUrl+=variables.charAt(Math.floor(Math.random()*length))
+    //         otpForUrl+=variables.charAt(Math.floor(Math.random()*length))
 
-        }
+    //     }
         
             
-            setShort_url(`https://url-shortener-back-end-gamma.vercel.app/urlpage/${otpForUrl}`)
+    //         setShort_url(`https://url-shortener-back-end-gamma.vercel.app/urlpage/${otpForUrl}`)
             
-    }
+    // }
 
     const handleSubmit=async(e)=>{
         e.preventDefault()
@@ -129,6 +129,18 @@ const UrlShortenerPage=()=>{
                  id="long_url"
                  onChange={(e)=>{setLong_url(e.target.value)}}
                  value={long_url}
+                   onClick={()=>{
+                     setUrlEntered(false);
+                       setUrlExist(false)
+                   }}></input>
+            </div>
+                        <div>
+                <label htmlFor="long_url" className="label">Enter your Short URL</label>
+                <input className="input"
+                 type="text" 
+                 id="long_url"
+                 onChange={(e)=>{setShort_url(e.target.value)}}
+                 value={short_url}
                    onClick={()=>{
                      setUrlEntered(false);
                        setUrlExist(false)
